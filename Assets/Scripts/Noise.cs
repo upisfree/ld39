@@ -14,18 +14,24 @@ public class Noise : MonoBehaviour {
     GetComponent<NoClipMouseLook>().enabled = false;
 
     GameObject.Find("Start").SetActive(true);
-    
+
     StartCoroutine(RemoveStartScreen());
   }
 
-  void Update () {
-	}
+    void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 
-  IEnumerator RemoveStartScreen()
+    IEnumerator RemoveStartScreen()
   {
-    yield return new WaitForSeconds(12);
+    yield return new WaitForSeconds(10);
     
-    GameObject.Find("Canvas").SetActive(false);
+    GameObject.Find("Start").SetActive(false);
+    GameObject.Find("End").SetActive(false);
 
     GetComponent<NoClipFirstPersonController>().enabled = true;
     GetComponent<NoClipMouseLook>().enabled = true;

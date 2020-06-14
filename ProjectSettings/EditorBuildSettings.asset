@@ -1,7 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!1045 &1
-EditorBuildSettings:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Scenes: []
+version https://git-lfs.github.com/spec/v1
+oid sha256:3238489cb44331427092cf396e866a348079933eb59468cf82f5ee43d60d2a53
+size 244

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,7 @@ public class Item : MonoBehaviour {
 
   public int Distance = 2;
   public int Seconds = 0;
+  public string Subtitle = "";
   public bool IsAlive = true;
 
   public InAudioNode music;
@@ -22,6 +24,7 @@ public class Item : MonoBehaviour {
   public GameObject EndImage;
   public GameObject Canvas;
   public GameObject Cam;
+  public TMP_Text SubtitleObject;
 
   void Start () {
     InAudio.Play(gameObject, music);
@@ -30,9 +33,10 @@ public class Item : MonoBehaviour {
     EndImage = GameObject.Find("End");
     Canvas = GameObject.Find("Canvas");
     Cam = GameObject.Find("Main Camera");
+    SubtitleObject = GameObject.Find("Subtitle").GetComponent<TMP_Text>();
   }
 	
-	void Update () {
+  void Update () {
     gameObject.transform.Rotate(X, Y, Z);
 
     //if (StartImage.active)
@@ -58,7 +62,9 @@ public class Item : MonoBehaviour {
     IsAlive = false;
     
     yield return new WaitForSeconds(Seconds);
-  
+
+    SubtitleObject.text = Subtitle;
+
     InAudio.Play(gameObject, voice);
     InAudio.Stop(gameObject, music);
 
@@ -66,16 +72,18 @@ public class Item : MonoBehaviour {
     
     if (WIN_COUNT > 10)
     {
-      yield return new WaitForSeconds(8);
+      yield return new WaitForSeconds(6);
 
       //GetComponent<NoClipFirstPersonController>().enabled = false;
       //GetComponent<NoClipMouseLook>().enabled = false;
 
+      SubtitleObject.text = "";
       StartImage.SetActive(false);
+      EndImage.SetActive(true);
       Canvas.SetActive(true);
       Cam.SetActive(false);
 
-      yield return new WaitForSeconds(15);
+      yield return new WaitForSeconds(10);
       
       WIN_COUNT = 0;
 

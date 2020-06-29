@@ -32,7 +32,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-
-# I don't want to export 1,5 GB to Github
-Assets/
-!Assets/*.meta

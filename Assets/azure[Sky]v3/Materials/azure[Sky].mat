@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: azure[Sky]
+  m_Shader: {fileID: 4800000, guid: 1d514117fcdebcd4ca4aeb31661e139a, type: 3}
+  m_ShaderKeywords: HDR_OFF
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 1000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Cloud1:
+        m_Texture: {fileID: 2800000, guid: c3cb9e4dc8d290348b8f51a39e68e508, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cloud2:
+        m_Texture: {fileID: 2800000, guid: c3cb9e4dc8d290348b8f51a39e68e508, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudTexture:
+        m_Texture: {fileID: 2800000, guid: bc6ac8dc21570e5448532e79012831c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WispyCloudTexture:
+        m_Texture: {fileID: 2800000, guid: bc6ac8dc21570e5448532e79012831c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CloudAlpha: 1
+    - _CloudCovarage: 0.25
+    - _Covarage: 0
+    - _FarColorDistance: 0.54999995
+    - _FarColorIntensity: 0.14375001
+    - _LerpGraoundSky: 1
+    - _LerpNightSky: 0.5
+    - _LerpNightSkyDistance: 0.25
+    - _ProceduralCloudAltitude: 50
+    - _ProceduralCloudDirection: 0.54
+    - _ProceduralCloudSpeed: -5.121968
+    - _SunSize: 281
+    - _SundiskIntensity: 2
+    - _WispyCloudDirection: 0
+    - _WispyCovarage: 0
+    m_Colors:
+    - _Bright: {r: 0.25735292, g: 0.14449346, b: 0.08326123, a: 1}
+    - _Darkness: {r: 0.5514706, g: 0.6102433, b: 1, a: 1}
+    - _GroundCloseColor: {r: 0, g: 0.042017262, b: 0.16806905, a: 1}
+    - _GroundFarColor: {r: 0.11437618, g: 0.19542126, b: 0.4352886, a: 1}
+    - _PenumbraColor: {r: 1, g: 0, b: 0, a: 1}
+    - _SunCol: {r: 1, g: 1, b: 1, a: 1}
+    - _SunColor: {r: 1, g: 0.09019608, b: 0, a: 1}
+    - _SunCoronaColor: {r: 1, g: 0.68529415, b: 0.21323532, a: 1}
+    - _WispyBright: {r: 0.25880116, g: 0.1450855, b: 0.08234582, a: 1}
+    - _WispyColor: {r: 1, g: 0.7303328, b: 0.524337, a: 1}
+    - _WispyDarkness: {r: 0.48187006, g: 0.5406936, b: 0.88555455, a: 1}

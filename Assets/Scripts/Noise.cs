@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Noise : MonoBehaviour {
   public InAudioNode noise;
@@ -13,20 +14,26 @@ public class Noise : MonoBehaviour {
     GetComponent<NoClipFirstPersonController>().enabled = false;
     GetComponent<NoClipMouseLook>().enabled = false;
 
+    if (Globals.language == "en")
+    {
+      GameObject.Find("Start").GetComponent<RawImage>().texture = Resources.Load<Texture>("start-en");
+      GameObject.Find("End").GetComponent<RawImage>().texture = Resources.Load<Texture>("end-en");
+    }
+
     GameObject.Find("Start").SetActive(true);
 
     StartCoroutine(RemoveStartScreen());
   }
 
-    void FixedUpdate()
+  void FixedUpdate()
+  {
+    if (Input.GetKeyDown(KeyCode.Escape))
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+      Application.Quit();
     }
+  }
 
-    IEnumerator RemoveStartScreen()
+  IEnumerator RemoveStartScreen()
   {
     yield return new WaitForSeconds(10);
     

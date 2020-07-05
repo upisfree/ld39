@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6035106, g: 0.48141712, b: 0.46937382, a: 1}
+  m_IndirectSpecularColor: {r: 0.5767844, g: 0.46291244, b: 0.45929217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,9 +132,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 4
   Seconds: 4
-  Subtitle: "\u043C\u044B \u0432\u0441\u0435 \u043E\u0447\u0435\u043D\u044C \u0436\u0434\u0451\u043C
+  SubtitleRu: "\u043C\u044B \u0432\u0441\u0435 \u043E\u0447\u0435\u043D\u044C \u0436\u0434\u0451\u043C
     \u0442\u0435\u0431\u044F, \u0431\u0430\u0431\u0443\u0448\u043A\u0430 \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
     \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u0442 \u043E \u0442\u0435\u0431\u0435"
+  SubtitleEn: we are all waiting for you, grandma always asks about you
+  SubtitleLiveTime: 5
   IsAlive: 1
   music: {fileID: 114273628409580012, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114316115662774618, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -261,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 3}
       propertyPath: WispyCloudPosition
-      value: -5.1069055
+      value: -7.103684
       objectReference: {fileID: 0}
     - target: {fileID: 11437734, guid: 0409227cdad8af1419458c1c3b2a5ffb, type: 3}
       propertyPath: SunDirLightIntensity
@@ -402,8 +404,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 4
   Seconds: 4
-  Subtitle: "\u043F\u043E\u043A\u043E\u0439\u0441\u044F \u0441 \u043C\u0438\u0440\u043E\u043C,
+  SubtitleRu: "\u043F\u043E\u043A\u043E\u0439\u0441\u044F \u0441 \u043C\u0438\u0440\u043E\u043C,
     \u0441\u044B\u043D\u043E\u043A"
+  SubtitleEn: rest in peace, sonny
+  SubtitleLiveTime: 3
   IsAlive: 1
   music: {fileID: 114478158678988584, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114892055592125158, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -780,10 +784,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 4
   Seconds: 4
-  Subtitle: "\u043F\u0440\u043E\u0441\u0442\u0438 \u043C\u0435\u043D\u044F, \u043F\u0440\u043E\u0441\u0442\u0438
+  SubtitleRu: "\u043F\u0440\u043E\u0441\u0442\u0438 \u043C\u0435\u043D\u044F, \u043F\u0440\u043E\u0441\u0442\u0438
     \u043C\u0435\u043D\u044F, \u043F\u0440\u043E\u0441\u0442\u0438, \u044D\u0442\u043E
     \u044F \u0432\u0438\u043D\u043E\u0432\u0430\u0442\u0430, \u043D\u0435 \u0443\u0431\u0435\u0440\u0435\u0433\u043B\u0430,
     \u043A\u0430\u043A \u0436\u0435 \u044F \u0431\u0435\u0437 \u0442\u0435\u0431\u044F"
+  SubtitleEn: "forgive me, forgive me, forgive, it\u2019s my fault,<br>I didn\u2019t
+    save you, how could I be without you"
+  SubtitleLiveTime: 8
   IsAlive: 1
   music: {fileID: 114501224293504056, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114812445167886262, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -812,9 +819,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 2
   Seconds: 4
-  Subtitle: "\u043C\u044B \u0432\u0441\u0435 \u043E\u0447\u0435\u043D\u044C \u0436\u0434\u0451\u043C
+  SubtitleRu: "\u043C\u044B \u0432\u0441\u0435 \u043E\u0447\u0435\u043D\u044C \u0436\u0434\u0451\u043C
     \u0442\u0435\u0431\u044F, \u0431\u0430\u0431\u0443\u0448\u043A\u0430 \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
     \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u0442 \u043E \u0442\u0435\u0431\u0435"
+  SubtitleEn: we are all waiting for you, grandma always asks about you
+  SubtitleLiveTime: 6
   IsAlive: 1
   music: {fileID: 114501605086732306, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114189973185676252, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -843,11 +852,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 4
   Seconds: 4
-  Subtitle: "\u043C\u043E\u0439 \u043C\u0430\u043B\u044B\u0448 \u0432 \u043C\u0430\u0435
-    \u0443\u0448\u0451\u043B \u0441\u043B\u0443\u0436\u0438\u0442\u044C, \u0434\u043E\u043C\u043E\u0439
+  SubtitleRu: "\u043C\u043E\u0439 \u043C\u0430\u043B\u044B\u0448 \u0432 \u043C\u0430\u0435
+    \u0443\u0448\u0451\u043B \u0441\u043B\u0443\u0436\u0438\u0442\u044C. \u0434\u043E\u043C\u043E\u0439
     \u0432\u0435\u0440\u043D\u0443\u043B\u0441\u044F \u0432 \u043A\u043E\u043D\u0446\u0435
-    \u0438\u044E\u043B\u044F, \u0447\u0435\u0440\u0435\u0437 \u0434\u0432\u0430 \u043C\u0435\u0441\u044F\u0446\u0430.
-    \u0432 \u0446\u0438\u043D\u043A\u043E\u0432\u043E\u043C \u0433\u0440\u043E\u0431\u0443"
+    \u0438\u044E\u043B\u044F, \u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437
+    \u0434\u0432\u0430 \u043C\u0435\u0441\u044F\u0446\u0430.<br>\u0432 \u0446\u0438\u043D\u043A\u043E\u0432\u043E\u043C
+    \u0433\u0440\u043E\u0431\u0443"
+  SubtitleEn: my baby left to serve in May. he came home at the end of July, almost
+    two months later.<br>in a zinc lined coffin
+  SubtitleLiveTime: 8
   IsAlive: 1
   music: {fileID: 114162006396699282, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114868652470034182, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -876,8 +889,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 5
   Seconds: 4
-  Subtitle: "\u043C\u043E\u044F \u0442\u044B \u043A\u0440\u043E\u0432\u0438\u043D\u0443\u0448\u043A\u0430,
+  SubtitleRu: "\u043C\u043E\u044F \u0442\u044B \u043A\u0440\u043E\u0432\u0438\u043D\u0443\u0448\u043A\u0430,
     \u044F \u0440\u0430\u0434\u0438 \u0442\u0435\u0431\u044F \u0436\u0438\u0432\u0443"
+  SubtitleEn: you're my blood, I live for you
+  SubtitleLiveTime: 6
   IsAlive: 1
   music: {fileID: 114445586865540446, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114649046448339936, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -1077,10 +1092,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 3
   Seconds: 4
-  Subtitle: "\u0441\u044B\u043D\u043E\u0447\u0435\u043A, \u043C\u0438\u043B\u044B\u0439,
+  SubtitleRu: "\u0441\u044B\u043D\u043E\u0447\u0435\u043A, \u043C\u0438\u043B\u044B\u0439,
     \u043F\u0443\u0441\u0442\u044C \u0437\u0435\u043C\u043B\u044F \u0442\u0435\u0431\u0435
     \u0431\u0443\u0434\u0435\u0442 \u043F\u0443\u0445\u043E\u043C, \u043A\u0430\u043A
     \u0436\u0435 \u043C\u043D\u0435 \u0442\u0435\u0431\u044F \u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442"
+  SubtitleEn: sonny, honey, rest in peace, how am I missing you
+  SubtitleLiveTime: 6
   IsAlive: 1
   music: {fileID: 114572385051860938, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114337714118114676, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -1226,8 +1243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 3
   Seconds: 4
-  Subtitle: "\u043C\u044B \u0441 \u043F\u0430\u043F\u043E\u0439 \u0442\u043E\u0431\u043E\u0439
-    \u043E\u0447\u0435\u043D\u044C \u0441\u0438\u043B\u044C\u043D\u043E \u0433\u043E\u0440\u0434\u0438\u043C\u0441\u044F"
+  SubtitleRu: "\u043C\u044B \u0441 \u043F\u0430\u043F\u043E\u0439 \u043E\u0447\u0435\u043D\u044C
+    \u0441\u0438\u043B\u044C\u043D\u043E \u0442\u043E\u0431\u043E\u0439 \u0433\u043E\u0440\u0434\u0438\u043C\u0441\u044F"
+  SubtitleEn: dad and I are very proud of you
+  SubtitleLiveTime: 6
   IsAlive: 1
   music: {fileID: 114287033520300248, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114189716771788688, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -1559,9 +1578,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 4
   Seconds: 4
-  Subtitle: "\u0441\u0435\u0440\u0434\u0446\u0435 \u0440\u0430\u0437\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F,
+  SubtitleRu: "\u0441\u0435\u0440\u0434\u0446\u0435 \u0440\u0430\u0437\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F,
     \u0440\u043E\u0434\u043D\u043E\u0439 \u043C\u043E\u0439, \u043F\u0440\u043E\u0441\u0442\u0438,
     \u043F\u0440\u043E\u0441\u0442\u0438 \u043C\u0435\u043D\u044F"
+  SubtitleEn: my heart is breaking, my dear, forgive, forgive me
+  SubtitleLiveTime: 6
   IsAlive: 1
   music: {fileID: 114270043897244378, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114374386919262158, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -1660,9 +1681,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 2
   Seconds: 4
-  Subtitle: "\u0441\u044B\u043D\u0430, \u043A\u0430\u043A \u0436\u0435 \u043C\u044B
+  SubtitleRu: "\u0441\u044B\u043D\u0430, \u043A\u0430\u043A \u0436\u0435 \u043C\u044B
     \u0431\u0443\u0434\u0435\u043C \u0434\u0430\u043B\u044C\u0448\u0435 \u0436\u0438\u0442\u044C
     \u0431\u0435\u0437 \u0442\u0435\u0431\u044F"
+  SubtitleEn: sonny, how are we going to live without you
+  SubtitleLiveTime: 5
   IsAlive: 1
   music: {fileID: 114599579808507426, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114952924813507472, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
@@ -1847,9 +1870,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Distance: 7
   Seconds: 4
-  Subtitle: "\u043A\u0430\u043A \u0436\u0435 \u044F \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u0430,
+  SubtitleRu: "\u043A\u0430\u043A \u0436\u0435 \u044F \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u0430,
     \u0447\u0442\u043E \u0431\u043E\u0436\u0435\u043D\u044C\u043A\u0430 \u043F\u043E\u0434\u0430\u0440\u0438\u043B
     \u043C\u043D\u0435 \u0442\u0435\u0431\u044F"
+  SubtitleEn: how happy I am that God gave me you
+  SubtitleLiveTime: 6
   IsAlive: 1
   music: {fileID: 114591730140111346, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}
   voice: {fileID: 114553401617081088, guid: 8657ecc6b9a40fc42b0535cf1085e5f4, type: 3}

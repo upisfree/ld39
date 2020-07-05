@@ -14,7 +14,9 @@ public class Item : MonoBehaviour {
 
   public int Distance = 2;
   public int Seconds = 0;
-  public string Subtitle = "";
+  public string SubtitleRu = "";
+  public string SubtitleEn = "";
+  public float SubtitleLiveTime = 5;
   public bool IsAlive = true;
 
   public InAudioNode music;
@@ -63,7 +65,23 @@ public class Item : MonoBehaviour {
     
     yield return new WaitForSeconds(Seconds);
 
-    SubtitleObject.text = Subtitle;
+    switch (Globals.language)
+    {
+      case "ru":
+        SubtitleObject.text = SubtitleRu;
+        
+        break;
+
+      case "en":
+        SubtitleObject.text = SubtitleEn;
+
+        break;
+
+      default:
+        SubtitleObject.text = SubtitleRu;
+
+        break;
+    }
 
     InAudio.Play(gameObject, voice);
     InAudio.Stop(gameObject, music);
@@ -83,11 +101,14 @@ public class Item : MonoBehaviour {
       Canvas.SetActive(true);
       Cam.SetActive(false);
 
-      yield return new WaitForSeconds(10);
-      
+      yield return new WaitForSeconds(13);
+
       WIN_COUNT = 0;
 
       SceneManager.LoadScene("scene");
+    } else {
+      yield return new WaitForSeconds(SubtitleLiveTime);
+      SubtitleObject.text = "";
     }
   }
 

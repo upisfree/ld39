@@ -7,20 +7,29 @@ public class Noise : MonoBehaviour {
   public InAudioNode noise;
 
   void Start () {
-    Cursor.visible = false;
+    Cursor.visible = true;
 
     InAudio.Play(gameObject, noise);
 
     GetComponent<NoClipFirstPersonController>().enabled = false;
     GetComponent<NoClipMouseLook>().enabled = false;
+  }
+
+  void StartGame()
+  {
+    Cursor.visible = false;
+
+    GameObject.Find("Start").GetComponent<RawImage>().enabled = true;
+    GameObject.Find("End").GetComponent<RawImage>().enabled = true;
 
     if (Globals.language == "en")
     {
-      GameObject.Find("Start").GetComponent<RawImage>().texture = Resources.Load<Texture>("start-en");
-      GameObject.Find("End").GetComponent<RawImage>().texture = Resources.Load<Texture>("end-en");
+        GameObject.Find("Start").GetComponent<RawImage>().texture = Resources.Load<Texture>("start-en");
+        GameObject.Find("End").GetComponent<RawImage>().texture = Resources.Load<Texture>("end-en");
     }
 
-    GameObject.Find("Start").SetActive(true);
+    GameObject.Find("ButtonEn").SetActive(false);
+    GameObject.Find("ButtonRu").SetActive(false);
 
     StartCoroutine(RemoveStartScreen());
   }
@@ -42,5 +51,19 @@ public class Noise : MonoBehaviour {
 
     GetComponent<NoClipFirstPersonController>().enabled = true;
     GetComponent<NoClipMouseLook>().enabled = true;
+  }
+
+  public void ChangeLanguageToEnglish()
+  {
+    Globals.language = "en";
+
+    StartGame();
+  }
+
+  public void ChangeLanguageToRussian()
+  {
+    Globals.language = "ru";
+
+    StartGame();
   }
 }

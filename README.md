@@ -1,5 +1,5 @@
 # ld39
-Game for Ludum Dare #39
+Game for the Ludum Dare #39
 
 ![](/ld39.gif?raw=true)
 

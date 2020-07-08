@@ -36,7 +36,7 @@ public class Noise : MonoBehaviour {
 
   void FixedUpdate()
   {
-    if (Input.GetKeyDown(KeyCode.Escape) && Application.platform == RuntimePlatform.WebGLPlayer)
+    if (Input.GetKeyDown(KeyCode.Escape) && Application.platform != RuntimePlatform.WebGLPlayer)
     {
       Application.Quit();
     }

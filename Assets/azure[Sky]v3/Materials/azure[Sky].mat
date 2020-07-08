@@ -50,7 +50,7 @@ Material:
     - _LerpNightSkyDistance: 0.25
     - _ProceduralCloudAltitude: 50
     - _ProceduralCloudDirection: 0.54
-    - _ProceduralCloudSpeed: -8.057334
+    - _ProceduralCloudSpeed: -8.274239
     - _SunSize: 281
     - _SundiskIntensity: 2
     - _WispyCloudDirection: 0

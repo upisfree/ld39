@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 public class Item : MonoBehaviour {
   public static int WIN_COUNT = 0;
 
-  private float X = GetRandomNumber(-1, 1);
-  private float Y = GetRandomNumber(-1, 1);
-  private float Z = GetRandomNumber(-1, 1);
+  private float X = GetRandomNumber(0, 0.5) * GetRandomSign();
+  private float Y = GetRandomNumber(0, 0.5) * GetRandomSign();
+  private float Z = GetRandomNumber(0, 0.5) * GetRandomSign();
 
   public int Distance = 2;
   public int Seconds = 0;
@@ -38,7 +38,7 @@ public class Item : MonoBehaviour {
     SubtitleObject = GameObject.Find("Subtitle").GetComponent<TMP_Text>();
   }
 	
-  void Update () {
+  void FixedUpdate () {
     gameObject.transform.Rotate(X, Y, Z);
 
     //if (StartImage.active)
@@ -115,6 +115,14 @@ public class Item : MonoBehaviour {
   static float GetRandomNumber(double minimum, double maximum)
   {
     System.Random random = new System.Random();
+
     return (float)(random.NextDouble() * (maximum - minimum) + minimum);
+  }
+
+  static int GetRandomSign()
+  {
+    System.Random random = new System.Random();
+
+    return (random.Next(0, 1) == 0) ? -1 : 1;
   }
 }

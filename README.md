@@ -11,6 +11,3 @@ Game for the Ludum Dare #39
 
 ### Video
 [YouTube](https://youtu.be/leGG8FK4rec).
-
-### If you're so curious
-If you want to build game, find somewhere (I don't know where) assets and build it.
